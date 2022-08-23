@@ -70,6 +70,7 @@ img {
 
 .logo-link {
   font-family: "Raleway", sans-serif;
+  font-style: normal;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
@@ -156,7 +157,7 @@ img {
 
 /* main-page*/
 .main-page {
-  width: 1600px;
+  max-width: 1600px;
   background: #c4c4c4;
   background-image: linear-gradient(
       rgba(47, 48, 58, 0.4),
@@ -463,18 +464,7 @@ footer {
   padding-top: 60px;
   padding-bottom: 60px;
 }
-.logo-link {
-  font-family: "Raleway", sans-serif;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
-  color: var(--color-logo);
-}
 
-.logo-header {
-  color: var(--color-logo-header);
-}
 .logo-footer {
   color: var(---color-logo-footer);
 }
@@ -619,6 +609,10 @@ footer {
   margin-left: 12px;
   padding: 10px 8px 10px 28px;
   border: none;
+
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.06em;
@@ -627,6 +621,7 @@ footer {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
 }
+
 .footer-icon {
   display: inline-flex;
   margin-left: 10px;
@@ -684,6 +679,9 @@ footer {
 /* .close-icon, */
 .close {
   position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   padding: 0;
   width: 30px;
   height: 30px;
@@ -756,6 +754,7 @@ footer {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   text-align: center;
+  border: none;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -802,7 +801,7 @@ footer {
   position: relative;
 }
 .input-field {
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 .input-icon {
   position: absolute;
@@ -813,6 +812,8 @@ footer {
 }
 
 .check-text {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
@@ -822,6 +823,7 @@ footer {
   display: flex;
   align-items: center;
 }
+
 .check-text span {
   width: 16px;
   height: 15px;
@@ -848,7 +850,7 @@ footer {
   border-color: #2196f3;
 }
 .terms-link {
-  border-bottom: 2px solid var(---color-current);
+  text-decoration: 1px underline var(---color-current);
   color: var(---color-current);
 }
 /* .iput-check:checked + .check-text span { */
@@ -939,6 +941,7 @@ footer {
   padding: 20px 24px;
   background: #ffffff;
   border: 1px solid #eeeeee;
+  border-top: none;
 }
 
 .button-nav-portfolio,
@@ -961,6 +964,7 @@ footer {
     box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1),
     color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .btn-current {
   background: var(---color-current);
   color: var(---color-portfolio-btn);
