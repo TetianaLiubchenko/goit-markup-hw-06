@@ -656,8 +656,8 @@ footer {
   left: 50%;
   transform: translate(-50%, -50%) scaleX(1);
   width: 528px;
-  height: 581px;
-  padding: 40px 39px 40px 41px;
+  /* height: 581px; */
+  padding: 40px;
   background: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -800,9 +800,9 @@ footer {
 .input-wrap {
   position: relative;
 }
-.input-field {
+/* .input-field {
   margin-bottom: 20px;
-}
+} */
 .input-icon {
   position: absolute;
   left: 12px;
@@ -819,9 +819,10 @@ footer {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: #757575;
-  margin-left: 9px;
+  margin-left: 12px;
   display: flex;
   align-items: center;
+  margin-bottom: 30px;
 }
 
 .check-text span {
@@ -839,6 +840,7 @@ footer {
   fill: transparent;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .iput-check:checked + .check-text .check-icon {
   fill: #ececec;
 }
@@ -852,6 +854,7 @@ footer {
 .terms-link {
   text-decoration: 1px underline var(---color-current);
   color: var(---color-current);
+  margin-left: 4px;
 }
 /* .iput-check:checked + .check-text span { */
 /* .check-text::before {
